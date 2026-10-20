@@ -45,6 +45,8 @@ article{transition:transform .2s ease,border-color .2s ease}
 <style>
 html.tg .tm-selbar{display:none !important}
 html.tg .tm-toast{bottom:16px !important}
+html.tg{--tm-safe-top:calc(max(var(--tg-safe-area-inset-top,0px),env(safe-area-inset-top,0px)) + var(--tg-content-safe-area-inset-top,0px));scroll-padding-top:var(--tm-safe-top)}
+html.tg header{padding-top:calc(14px + var(--tm-safe-top)) !important}
 html.tg body{overscroll-behavior-y:none;-webkit-tap-highlight-color:transparent;-webkit-user-select:none;user-select:none}
 html.tg input{-webkit-user-select:text;user-select:text}
 </style>
